@@ -38,19 +38,19 @@ import info from "../data/info";
 
         <div class="hidden md:block col-span-2">
           <Card_2x1 info={info.primaryCards[0]} />
-          <Card_2x1 info={info.primaryCards[1]} />
           <Card_2x1 info={info.primaryCards[2]} />
           <Card_2x1 info={info.primaryCards[3]} />
+          <Card_2x1 info={info.primaryCards[1]} />
         </div>
 
         <!-- 文章列表 -->
         <div class="col-span-4">
           <Card_8x1 info={info.sectionTitles[0]} />
-          <Articles_List />
+          <!-- <Articles_List /> -->
         </div>
 
         <!-- 个人项目 -->
-        <div class="col-span-4">
+        <!-- <div class="col-span-4">
           <Card_8x1 info={info.sectionTitles[1]} />
         </div>
         <div class="col-span-4 md:col-span-2">
@@ -65,10 +65,10 @@ import info from "../data/info";
         }
         <div class="col-span-4 md:col-span-2">
           <Card_4x2 info={info.projectCardEnd} />
-        </div>
+        </div> -->
 
         <!-- 音乐创作 -->
-        <div class="col-span-4">
+        <!-- <div class="col-span-4">
           <Card_8x1 info={info.sectionTitles[2]} />
         </div>
         {
@@ -77,7 +77,7 @@ import info from "../data/info";
               <Card_4x2 info={card} />
             </div>
           ))
-        }
+        } -->
 
         <!-- 关注翠翠 -->
         <div class="md:hidden col-span-4">
@@ -106,14 +106,8 @@ import info from "../data/info";
 
       <div class="pt-12"></div>
       <footer class="text-center">
-        <div class="">
-          made with ❤️ by <a
-            href="https://idealclover.top"
-            target="_blank"
-            class="text-gray-400">idealclover</a
-          >
-        </div>
-        <div>
+        
+        <!-- <div>
           🚀 powered by <a
             href="https://tailwindcss.com/"
             target="_blank"
@@ -129,23 +123,30 @@ import info from "../data/info";
             target="_blank"
             class="text-gray-400">bento.me</a
           >
-        </div>
-        <div class="beian">
+        </div> -->
+        <!-- <div class="beian">
           <a
             href="https://beian.miit.gov.cn"
             rel="noreferrer"
             target="_blank"
             class="text-gray-400">京ICP备2024045824号</a
-          >
-        </div>
-        <div class="beian">
-          <a
-            href="https://beian.mps.gov.cn/#/query/webSearch?code=11010502054688"
-            rel="noreferrer"
+          > | <a
+          href="https://beian.mps.gov.cn/#/query/webSearch?code=11010502054688"
+          rel="noreferrer"
+          target="_blank"
+          class="text-gray-400">京公网安备11010502054688号</a
+        >
+        </div> -->
+
+        <div class="">
+          Special thanks to ❤️ <a
+            href="https://idealclover.top"
             target="_blank"
-            class="text-gray-400">京公网安备11010502054688号</a
+            class="text-gray-400">idealclover</a
           >
+          Who open-sourced this webpage
         </div>
+       
       </footer>
       <div class="pt-10"></div>
     </main>
@@ -183,7 +184,7 @@ import info from "../data/info";
   // 更新粉丝数
   import updateInfo from "../data/update";
 
-  document.addEventListener("DOMContentLoaded", () => {
+  /* document.addEventListener("DOMContentLoaded", () => {
     updateInfo.forEach((item) => {
       fetch(item.updateUrl)
         .then((response) => response.json())
@@ -194,5 +195,5 @@ import info from "../data/info";
         })
         .catch((error) => console.error("Error:", error));
     });
-  });
+  }); */
 </script>

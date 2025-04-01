@@ -1,30 +1,30 @@
 export default {
-  title: "idealclover",
-  desc: "Stay simple, stay naive.",
-  imgUrl: "https://cdn.idealclover.cn/Projects/homepage/icon.png",
-  location: "Beijing, China",
+  title: "ClovertaTheTrilobita",
+  desc: "a.k.a. 寒武纪的三叶虫",
+  imgUrl: "https://avatars.githubusercontent.com/ClovertaTheTrilobita",
+  location: "Haikou, China",
   titleCard: {
-    title: "翠翠 @idealclover",
-    desc: "商业化产品经理",
-    subdesc: "独立开发者/个人博主/Vocaloid",
-    url: "https://idealclover.top/about.html",
+    title: "ClovertaTheTrilobita",
+    desc: "带学牲 | 计算机本科在读 | 死宅",
+    subdesc: "I use Arch btw.",
+    url: "https://github.com/CLovertaTheTrilobita",
     bgStyle:
       "bg-primary shadow-accent hover:bg-primary-focus hover:shadow-gray-500",
     btnText: "关于我 · 了解更多",
   },
   cvTitleCard: {
-    title: "翠翠 @idealclover",
-    desc: "Project Manager @Bytedance\n产品经理/独立开发者/个人博主/Vocaloid",
-    url: "https://idealclover.top/about.html",
+    title: "寒武纪的三叶虫 @clovertathetrilobita",
+    desc: "计算机本科在读",
+    url: "https://github.com/CLovertaTheTrilobita",
     bgStyle:
       "bg-primary shadow-accent hover:bg-primary-focus hover:shadow-gray-500 whitespace-pre-line",
     btnText: "查看简历",
   },
   blogCard: {
     title: "博客",
-    desc: "记录技术/生活/随想/测评",
-    subdesc: "https://idealclover.top",
-    url: "https://idealclover.top/articles.html",
+    desc: "我曾经想过写博客",
+    subdesc: "blog.csdn.net/Clovertaa",
+    url: "https://blog.csdn.net/Clovertaa",
     btnText: "去逛逛 · 历史文章",
     bgStyle:
       "bg-[#2C3E50] shadow-[#2C3E50]/75 hover:bg-[#2C3E50]/75 hover:shadow-[#2C3E50]",
@@ -56,18 +56,18 @@ export default {
   ],
   primaryCards: [
     {
-      title: "知乎",
-      url: "https://www.zhihu.com/people/cuicuijiang",
+      title: "API",
+      url: "/",
       bgStyle:
         "bg-[#0275D2] shadow-[#0275D2]/75 hover:bg-[#0275D2]/75 hover:shadow-[#0275D2]",
-      btnText: "2879 Followers",
+      btnText: "正在施工中🚧",
       textStyle: "text-white",
       btnStyle: "zhihu text-white",
     },
     {
       title: "Bilibili",
-      url: "https://space.bilibili.com/5044093",
-      btnText: "1634 Followers",
+      url: "https://space.bilibili.com/386496351",
+      btnText: "79 Followers",
       bgStyle:
         "bg-[#FB7299] shadow-[#FB7299]/75 hover:bg-[#FB7299]/75 hover:shadow-[#FB7299]",
       btnStyle: "bili text-white",
@@ -75,8 +75,8 @@ export default {
     },
     {
       title: "GitHub",
-      url: "https://github.com/idealclover",
-      btnText: "752 Followers",
+      url: "https://github.com/ClovertaTheTrilobita",
+      btnText: "35 stars",
       bgStyle:
         "bg-[#181717] shadow-[#181717]/75 hover:bg-[#181717]/75 hover:shadow-[#181717]",
       btnStyle: "github text-white",
@@ -84,8 +84,8 @@ export default {
     },
     {
       title: "网易云",
-      url: "https://music.163.com/#/artist?id=52267156",
-      btnText: "77 Followers",
+      url: "https://music.163.com/#/user/home?id=1497040752",
+      btnText: "来听会儿歌吧🎶",
       bgStyle:
         "bg-[#C20B0D] shadow-[#C20B0D]/75 hover:bg-[#C20B0D]/75 hover:shadow-[#C20B0D]",
       btnStyle: "netease text-white",
@@ -94,7 +94,7 @@ export default {
   ],
   sectionTitles: [
     {
-      title: "📝 博客文章",
+      title: "📝 API列表",
     },
     {
       title: "🗃️ 个人项目",
@@ -275,8 +275,8 @@ export default {
   ],
   teleCards: [
     {
-      title: "Email: idealclover@163.com",
-      url: "mailto:idealclover@163.com",
+      title: "Email: cloverta@petalmail.com",
+      url: "mailto:cloverta@petalmail.com",
       iconClass: "mail_s",
       iconInfoClass: "mail",
       textStyle: "font-normal",
@@ -284,15 +284,15 @@ export default {
         "bg-primary hover:bg-primary-focus shadow-accent hover:shadow-gray-500",
     },
     {
-      title: "QQ: 1455169173",
-      url: "http://wpa.qq.com/msgrd?v=3&uin=1455169173&site=qq&menu=yes",
+      title: "QQ: 1423315181",
+      url: "http://wpa.qq.com/msgrd?v=3&uin=1423315181&site=qq&menu=yes",
       iconClass: "QQ_s",
       iconInfoClass: "QQ",
       textStyle: "font-normal",
       bgStyle:
         "bg-primary hover:bg-primary-focus shadow-accent hover:shadow-gray-500",
     },
-    {
+    /* {
       title: "Telegram: @idealclover",
       url: "http://t.me/idealclover",
       iconClass: "telegram_s",
@@ -309,6 +309,6 @@ export default {
       textStyle: "font-normal",
       bgStyle:
         "bg-primary hover:bg-primary-focus shadow-accent hover:shadow-gray-500",
-    },
+    }, */
   ],
 };

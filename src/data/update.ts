@@ -1,15 +1,15 @@
 export default [
   {
     className: "zhihu",
-    updateUrl: "https://api.swo.moe/stats/zhihu/cuicuijiang",
+    updateUrl: "https://api.swo.moe/stats/zhihu/Clover",
   },
   {
     className: "bili",
-    updateUrl: "https://api.swo.moe/stats/bilibili/5044093",
+    updateUrl: "https://api.swo.moe/stats/bilibili/386496351",
   },
   {
     className: "github",
-    updateUrl: "https://api.swo.moe/stats/github/idealclover",
+    updateUrl: "https://api.swo.moe/stats/github/ClovertaTheTrilobita",
   },
   {
     className: "netease",
