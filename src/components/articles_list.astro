@@ -1,25 +1,75 @@
 ---
 import articlesList from "../data/articles_list";
 
-interface ApiItem {
-  name: string;
-  url: string | null;
-  description: string | null;
-  manual: null;
+// 类型定义
+interface BlogPost {
+  date: string;
+  guid: {
+    rendered: string;
+  };
+  title: {
+    rendered: string;
+  };
 }
 
+interface ApiItem {
+  name: string;
+  url: string;
+  description?: string;
+}
+
+interface ServiceGroup {
+  title: string;
+  url: string;
+  apis: Array<{
+    title: string;
+    url: string;
+    state?: string;
+    description?: string;
+  }>;
+}
+
+// 日期格式化函数
+const formatBlogPost = (post: BlogPost): BlogPost => ({
+  ...post,
+  date: post.date.split('T')[0]
+});
+
 // 获取并转换数据
-let apiList;
+let apiList: ServiceGroup[];
+
 try {
-  const response = await fetch('https://api.cloverta.top/list');
-  if (!response.ok) throw new Error('Failed to fetch');
-  const remoteData: ApiItem[] = await response.json();
-  
+  // 并行请求
+  const [blogResponse, apiResponse] = await Promise.all([
+    fetch('https://blog.cloverta.top/wp-json/wp/v2/posts?page=1&per_page=20'),
+    fetch('https://api.cloverta.top/list')
+  ]);
+
+  // 验证响应
+  if (!blogResponse.ok) throw new Error('博客数据请求失败');
+  if (!apiResponse.ok) throw new Error('API数据请求失败');
+
+  // 处理数据
+  const rawBlogPosts = await blogResponse.json() as BlogPost[];
+  const apiItems = await apiResponse.json() as ApiItem[];
+
+  // 格式化博客数据
+  const formattedBlogPosts = rawBlogPosts.map(formatBlogPost);
+
   apiList = [
     {
-      title: "Api",
-      url: "https://api.cloverta.com/",
-      apis: remoteData.map(item => ({
+      title: "文章",
+      url: "https://blog.cloverta.top/",
+      apis: formattedBlogPosts.map(post => ({
+        title: post.title.rendered,
+        url: post.guid.rendered || '#',
+        state: post.date
+      }))
+    },
+    {
+      title: "API",
+      url: "https://api.cloverta.top/",
+      apis: apiItems.map(item => ({
         title: item.name,
         url: item.url || '#',
         state: item.url ? "OK" : "NA",
@@ -28,22 +78,32 @@ try {
     }
   ];
 } catch (error) {
-  // 错误处理（备用数据）
+  console.error('数据加载失败:', error);
+  
+  // 更完善的备用数据
   apiList = [
     {
-      title: "Api",
-      url: "https://api.cloverta.com/",
-      apis: [
-        {
-          title: "数据加载失败",
-          url: "#",
-          state: "NA",
-          description: "请稍后重试"
-        }
-      ]
+      title: "文章",
+      url: "https://blog.cloverta.top/",
+      apis: [{
+        title: "文章加载失败",
+        url: "#",
+        state: "NA"
+      }]
+    },
+    {
+      title: "API",
+      url: "https://api.cloverta.top/",
+      apis: [{
+        title: "接口加载失败",
+        url: "#",
+        state: "NA",
+        description: "请稍后重试"
+      }]
     }
   ];
 }
+
 ---
 
 <div
@@ -52,9 +112,9 @@ try {
   <div class="card-body">
     <div class="tabs tabs-boxed rounded-xl max-sm:py-2">
       {
-        articlesList.map((articles, index) => (
+        apiList.map((content, index) => (
           <div class="max-sm:px-2 tab tab-sm md:tab-lg" data-tab-index={index}>
-            {articles.title}
+            {content.title}
           </div>
         ))
       }
