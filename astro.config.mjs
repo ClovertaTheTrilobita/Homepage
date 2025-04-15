@@ -5,12 +5,14 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
 
+  base: '/',
+
   // dev mode
-  // site: 'http://localhost:4321'
+  // site: 'http://localhost:4321',
 
   // production mode
-  site: 'https://image.idealclover.cn/projects/Homepage',
+  site: 'https://cloverta.top/',
 
   // mode: 不同的网站 cn/top/moe
-  siteMode: "moe"
+  siteMode: "top"
 });
