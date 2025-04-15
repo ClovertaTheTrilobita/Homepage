@@ -1,36 +1,26 @@
 export default [
+  /* {
+    title: "文章",
+    url: "https://blog.cloverta.top/",
+  }, */
   {
-    title: "最新",
-    url: "https://idealclover.top/articles.html",
-    articles: [
+    title: "Api",
+    url: "https://api.cloverta.top/",
+    apis: [
       {
-        title: "咕咕了一年的新个人主页介绍",
-        url: "https://idealclover.top/archives/643",
-        time: "2025.03.07",
+        title: "哔哩哔哩视频Api",
+        url: "https://api.cloverta.top/bili",
+        state: "avalible",
       },
       {
-        title: "所以我放弃了双持—兼谈折叠屏手机使用体验",
-        url: "https://idealclover.top/archives/642",
-        time: "2024.12.31",
+        title: "更多施工中...",
+        url: "#",
+        state: "NA",
       },
-      {
-        title: "好评喵：轻松生成商品 / 服务评价",
-        url: "https://idealclover.top/archives/641",
-        time: "2024.11.17",
-      },
-      {
-        title: "2024 Q3 总结：灰烬里重新生根发芽",
-        url: "https://idealclover.top/archives/640",
-        time: "2024.11.09",
-      },
-      {
-        title: "应急储备包制作经验分享：打造个人应急 “救生圈”",
-        url: "https://idealclover.top/archives/639",
-        time: "2024.09.30",
-      }
     ],
   },
-  {
+  
+  /* {
     title: "技术",
     url: "https://idealclover.top/category/blog",
     articles: [
@@ -154,5 +144,5 @@ export default [
         time: "2019.12.19",
       }
     ],
-  },
+  }, */
 ];

@@ -74,7 +74,11 @@ import info from "../data/info";
           <div class="animate-on-scroll animate-entrance delay-300">
           <Card_8x1 info={info.sectionTitles[0]} />
           </div>
-          <!-- <Articles_List /> -->
+          <div class="animate-on-scroll animate-entrance delay-400">
+            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-1">
+          <Articles_List />
+          </div>
+          </div>
         </div>
 
         <!-- 个人项目 -->
@@ -121,14 +125,14 @@ import info from "../data/info";
 
         <!-- 联系方式 -->
         <div class="col-span-4">
-          <div class="animate-on-scroll animate-entrance delay-500">
+          <div class="animate-on-scroll animate-entrance delay-450">
           <Card_8x1 info={info.sectionTitles[4]} />
           </div>
         </div>
         {
           info.teleCards.map((card) => (
             <div class="col-span-4 md:col-span-2">
-            <div class="animate-on-scroll animate-entrance delay-700">
+            <div class="animate-on-scroll animate-entrance delay-550">
               <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
               <Card_2x1 info={card} />
               </div>
