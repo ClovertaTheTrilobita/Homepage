@@ -94,7 +94,7 @@ export default {
   ],
   sectionTitles: [
     {
-      title: "📝 API列表",
+      title: "📝 内容列表",
     },
     {
       title: "🗃️ 个人项目",
@@ -103,7 +103,7 @@ export default {
       title: "🎼 音乐创作",
     },
     {
-      title: "👋 关注翠翠",
+      title: "👋 与我相关",
     },
     {
       title: "📫 与我联系",
