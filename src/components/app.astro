@@ -164,23 +164,25 @@ import info from "../data/info";
         </div> -->
         
 
-        <div class="beian text-gray-400">
-          <a
-            href="https://beian.miit.gov.cn"
-            rel="noreferrer"
-            target="_blank"
-            class="text-gray-400">赣ICP备2025059789号</a
-          > | <a href="https://beian.mps.gov.cn/#/query/webSearch?code=36020002000597" rel="noreferrer" target="_blank" class="text-gray-400">赣公网安备36020002000597号</a>
-        </div>
+        <!-- 添加外层包裹容器 -->
+<div style="display: flex; flex-direction: column; align-items: center">
+  <!-- 备案信息 -->
+  <div class="beian text-gray-400" style="display: flex; gap: 4px; justify-content: center">
+    <a href="https://beian.miit.gov.cn" target="_blank">赣ICP备2025059789号</a>
+    <span>|</span>
+    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=36020002000597" target="_blank" style="display: flex; gap: 2px">
+      <img src="http://blog.cloverta.top/wp-content/uploads/2025/04/备案图标.png" style="height: 1em; vertical-align: middle; margin-top: 4px;">
+      <span>赣公网安备36020002000597号</span>
+    </a>
+  </div>
 
-        <div class="">
-          Special thanks to ❤️ <a
-            href="https://idealclover.top"
-            target="_blank"
-            class="text-gray-400">idealclover</a
-          >
-          ,&nbsp;Who open-sourced this webpage
-        </div>
+  <!-- 致谢信息 -->
+  <div style="text-align: center">
+    Special thanks to ❤️
+    <a href="https://idealclover.top" target="_blank" class="text-gray-400">idealclover</a>
+    ,&nbsp;Who open-sourced this webpage
+  </div>
+</div>
        
       </footer>
       <div class="pt-10"></div>
