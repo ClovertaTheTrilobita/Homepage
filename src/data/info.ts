@@ -67,7 +67,7 @@ export default {
     {
       title: "Bilibili",
       url: "https://space.bilibili.com/386496351",
-      btnText: "79 Followers",
+      btnText: "(゜-゜)つロ 乾杯",
       bgStyle:
         "bg-[#FB7299] shadow-[#FB7299]/75 hover:bg-[#FB7299]/75 hover:shadow-[#FB7299]",
       btnStyle: "bili text-white",
@@ -76,7 +76,7 @@ export default {
     {
       title: "GitHub",
       url: "https://github.com/ClovertaTheTrilobita",
-      btnText: "35 stars",
+      btnText: "Loading...",
       bgStyle:
         "bg-[#181717] shadow-[#181717]/75 hover:bg-[#181717]/75 hover:shadow-[#181717]",
       btnStyle: "github text-white",

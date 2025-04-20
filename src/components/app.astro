@@ -17,15 +17,15 @@ import info from "../data/info";
     >
       <div class="pt-10 xl:pt-20"></div>
       <div class="animate-on-scroll animate-entrance delay-100">
-      <div class="w-64">
-        <img
-          class="w-32 h-32 md:w-52 md:h-52 rounded-full"
-          src={info.imgUrl}
-          alt={info.title}
-        />
-        <div class="pt-10"></div>
-        <h1 class="text-3xl font-bold pl-2">{info.title}</h1>
-        <p class="text-lg pl-2">{info.desc}</p>
+        <div class="w-64">
+          <img
+            class="w-32 h-32 md:w-52 md:h-52 rounded-full"
+            src={info.imgUrl}
+            alt={info.title}
+          />
+          <div class="pt-10"></div>
+          <h1 class="text-3xl font-bold pl-2">{info.title}</h1>
+          <p class="text-lg pl-2">{info.desc}</p>
         </div>
       </div>
     </aside>
@@ -34,37 +34,61 @@ import info from "../data/info";
       <div class="pt-10 xl:pt-20"></div>
       <div class="grid grid-cols-4 gap-x-4 lg:gap-x-8 lg:w-[54rem]">
         <div class="col-span-4 md:col-span-2">
-          <div class="animate-on-scroll animate-entrance duration-500 delay-100">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-            <Card_4x2 info={info.titleCard} />
+          <div
+            class="animate-on-scroll animate-entrance duration-500 delay-100"
+          >
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_4x2 info={info.titleCard} />
             </div>
           </div>
-          <div class="animate-on-scroll animate-entrance duration-500 delay-200">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-            <Card_4x2 info={info.blogCard} />
+          <div
+            class="animate-on-scroll animate-entrance duration-500 delay-200"
+          >
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_4x2 info={info.blogCard} />
             </div>
-        </div>
+          </div>
         </div>
 
         <div class="hidden md:block col-span-2">
-          <div class="animate-on-scroll animate-entrance duration-500 delay-125">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-            <Card_2x1 info={info.primaryCards[0]} />
+          <div
+            class="animate-on-scroll animate-entrance duration-500 delay-125"
+          >
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_2x1 info={info.primaryCards[0]} />
             </div>
           </div>
-          <div class="animate-on-scroll animate-entrance duration-500 delay-150">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-            <Card_2x1 info={info.primaryCards[2]} />
+          <div
+            class="animate-on-scroll animate-entrance duration-500 delay-150"
+          >
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_2x1 info={info.primaryCards[2]} />
             </div>
           </div>
-          <div class="animate-on-scroll animate-entrance duration-500 delay-175">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-            <Card_2x1 info={info.primaryCards[3]} />
+          <div
+            class="animate-on-scroll animate-entrance duration-500 delay-175"
+          >
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_2x1 info={info.primaryCards[3]} />
             </div>
           </div>
-          <div class="animate-on-scroll animate-entrance duration-500 delay-200">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-            <Card_2x1 info={info.primaryCards[1]} />
+          <div
+            class="animate-on-scroll animate-entrance duration-500 delay-200"
+          >
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_2x1 info={info.primaryCards[1]} />
             </div>
           </div>
         </div>
@@ -72,12 +96,14 @@ import info from "../data/info";
         <!-- API列表 -->
         <div class="col-span-4">
           <div class="animate-on-scroll animate-entrance delay-300">
-          <Card_8x1 info={info.sectionTitles[0]} />
+            <Card_8x1 info={info.sectionTitles[0]} />
           </div>
           <div class="animate-on-scroll animate-entrance delay-400">
-            <div class="transition-transform duration-300 ease-bounce hover:-translate-y-1">
-          <Articles_List />
-          </div>
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-1"
+            >
+              <Articles_List />
+            </div>
           </div>
         </div>
 
@@ -126,16 +152,16 @@ import info from "../data/info";
         <!-- 联系方式 -->
         <div class="col-span-4">
           <div class="animate-on-scroll animate-entrance delay-450">
-          <Card_8x1 info={info.sectionTitles[4]} />
+            <Card_8x1 info={info.sectionTitles[4]} />
           </div>
         </div>
         {
           info.teleCards.map((card) => (
             <div class="col-span-4 md:col-span-2">
-            <div class="animate-on-scroll animate-entrance delay-550">
-              <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
-              <Card_2x1 info={card} />
-              </div>
+              <div class="animate-on-scroll animate-entrance delay-550">
+                <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
+                  <Card_2x1 info={card} />
+                </div>
               </div>
             </div>
           ))
@@ -144,7 +170,6 @@ import info from "../data/info";
 
       <div class="pt-12"></div>
       <footer class="text-center">
-        
         <!-- <div>
           🚀 powered by <a
             href="https://tailwindcss.com/"
@@ -162,28 +187,42 @@ import info from "../data/info";
             class="text-gray-400">bento.me</a
           >
         </div> -->
-        
 
         <!-- 添加外层包裹容器 -->
-<div style="display: flex; flex-direction: column; align-items: center">
-  <!-- 备案信息 -->
-  <div class="beian text-gray-400" style="display: flex; gap: 4px; justify-content: center">
-    <a href="https://beian.miit.gov.cn" target="_blank">赣ICP备2025059789号</a>
-    <span>|</span>
-    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=36020002000597" target="_blank" style="display: flex; gap: 2px">
-      <img src="http://blog.cloverta.top/wp-content/uploads/2025/04/备案图标.png" style="height: 1em; vertical-align: middle; margin-top: 4px;">
-      <span>赣公网安备36020002000597号</span>
-    </a>
-  </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <!-- 备案信息 -->
+          <div
+            class="beian text-gray-400"
+            style="display: flex; gap: 4px; justify-content: center"
+          >
+            <a href="https://beian.miit.gov.cn" target="_blank"
+              >赣ICP备2025059789号</a
+            >
+            <span>|</span>
+            <a
+              href="https://beian.mps.gov.cn/#/query/webSearch?code=36020002000597"
+              target="_blank"
+              style="display: flex; gap: 2px"
+            >
+              <img
+                src="http://blog.cloverta.top/wp-content/uploads/2025/04/备案图标.png"
+                style="height: 1em; vertical-align: middle; margin-top: 4px;"
+              />
+              <span>赣公网安备36020002000597号</span>
+            </a>
+          </div>
 
-  <!-- 致谢信息 -->
-  <div style="text-align: center">
-    Special thanks to ❤️
-    <a href="https://idealclover.top" target="_blank" class="text-gray-400">idealclover</a>
-    ,&nbsp;Who open-sourced this webpage
-  </div>
-</div>
-       
+          <!-- 致谢信息 -->
+          <div style="text-align: center">
+            Special thanks to ❤️
+            <a
+              href="https://idealclover.top"
+              target="_blank"
+              class="text-gray-400">idealclover</a
+            >
+            ,&nbsp;Who open-sourced this webpage
+          </div>
+        </div>
       </footer>
       <div class="pt-10"></div>
     </main>
@@ -192,11 +231,11 @@ import info from "../data/info";
 
 <style>
   @tailwind components;
-@layer components {
-  .animate-entrance {
-    @apply opacity-0 translate-y-10 transition-all duration-700 ease-out [&.visible]:opacity-100 [&.visible]:translate-y-0;
+  @layer components {
+    .animate-entrance {
+      @apply opacity-0 translate-y-10 transition-all duration-700 ease-out [&.visible]:opacity-100 [&.visible]:translate-y-0;
+    }
   }
-}
 
   .mail {
     background: url("https://image.idealclover.cn/projects/Homepage/icons/icons.png") -0px -0px
@@ -226,11 +265,9 @@ import info from "../data/info";
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  
   .ease-bounce {
     transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
-  
-}
+  }
 </style>
 
 <script>
@@ -238,21 +275,24 @@ import info from "../data/info";
   import updateInfo from "../data/update";
 
   document.addEventListener("DOMContentLoaded", () => {
-    const animateElements = document.querySelectorAll('.animate-on-scroll');
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // 触发一次后取消观察
-        }
-      });
-    }, {
-      threshold: 0.1, // 当元素 10% 进入视口时触发
-      rootMargin: '0px 0px -50px 0px' // 底部提前 50px 触发
-    });
+    const animateElements = document.querySelectorAll(".animate-on-scroll");
 
-    animateElements.forEach(element => observer.observe(element));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // 触发一次后取消观察
+          }
+        });
+      },
+      {
+        threshold: 0.1, // 当元素 10% 进入视口时触发
+        rootMargin: "0px 0px -50px 0px", // 底部提前 50px 触发
+      },
+    );
+
+    animateElements.forEach((element) => observer.observe(element));
 
     updateInfo.forEach((item) => {
       fetch(item.updateUrl)
@@ -260,7 +300,11 @@ import info from "../data/info";
         .then((data) => {
           const element = document.querySelector(`.${item.className}`);
           if (data.count == null) return;
-          if (element) element.textContent = data.count + " Followers";
+          if (item.className == "github") {
+            if (element) element.textContent = data.count + " Stars";
+          } else {
+            if (element) element.textContent = data.count + " Followers";
+          }
         })
         .catch((error) => console.error("Error:", error));
     });

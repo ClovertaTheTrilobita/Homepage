@@ -9,10 +9,10 @@ export default [
   },
   {
     className: "github",
-    updateUrl: "https://api.swo.moe/stats/github/ClovertaTheTrilobita",
+    updateUrl: "https://api.cloverta.top/github/stars?user=ClovertaTheTrilobita",
   },
   {
     className: "netease",
-    updateUrl: "https://api.swo.moe/stats/neteasemusic/78983390",
+    updateUrl: "https://api.swo.moe/stats/neteasemusic/1497040752",
   },
 ];
