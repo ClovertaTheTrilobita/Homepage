@@ -139,12 +139,22 @@ import info from "../data/info";
 
         <!-- 关注翠翠 -->
         <div class="md:hidden col-span-4">
-          <Card_8x1 info={info.sectionTitles[3]} />
+          <div class="animate-on-scroll animate-entrance delay-450">
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
+            >
+              <Card_8x1 info={info.sectionTitles[3]} />
+            </div>
+          </div>
         </div>
         {
           info.primaryCards.map((card) => (
             <div class="md:hidden sm:col-span-2 col-span-4">
-              <Card_2x1 info={card} />
+              <div class="animate-on-scroll animate-entrance delay-550">
+                <div class="transition-transform duration-300 ease-bounce hover:-translate-y-2">
+                  <Card_2x1 info={card} />
+                </div>
+              </div>
             </div>
           ))
         }
