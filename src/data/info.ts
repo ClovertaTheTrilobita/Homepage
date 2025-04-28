@@ -60,7 +60,7 @@ export default {
       url: "https://doc.cloverta.top/",
       bgStyle:
         "bg-[#0275D2] shadow-[#0275D2]/75 hover:bg-[#0275D2]/75 hover:shadow-[#0275D2]",
-      btnText: "绝赞更新中🚧",
+      btnText: "绝赞更新中🔥",
       textStyle: "text-white",
       btnStyle: "zhihu text-white",
     },
