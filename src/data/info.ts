@@ -110,18 +110,18 @@ export default {
     },
   ],
   projectCardStart: {
-    title: "南哪课表（Android & iOS）",
-    desc: "简洁无广告的南大专属课表",
-    subdesc: "累积服务 5w+ 南大同学",
-    url: "https://nju.app",
-    btnText: "https://nju.app",
+    title: "三叶草bot",
+    desc: "一个基于Nonebot+官方API的QQ群聊机器人",
+    subdesc: "来做个QQ机器人吧",
+    url: "https://github.com/ClovertaTheTrilobita/SanYeCao-Nonebot",
+    btnText: "github.com",
     bgStyle:
-      "bg-[url('https://cdn.idealclover.cn/Projects/homepage/project_nnkb_2.jpg')] bg-cover bg-center shadow-[#2C3E50]/75 hover:shadow-[#2C3E50]",
+      "bg-[url('https://blog.cloverta.top/wp-content/uploads/2025/04/122857380_p0.png')] bg-cover bg-center shadow-[#2C3E50]/75 hover:shadow-[#2C3E50]",
     textStyle: "text-black",
     btnStyle: "glass",
     btnTextStyle: "text-black lowercase",
   },
-  projectCards: [
+  /* projectCards: [
     {
       title: "心花日记",
       desc: "有温度的日记应用",
@@ -215,12 +215,12 @@ export default {
       bgStyle:
         "bg-[#2cbb00] shadow-[#2cbb00]/75 hover:bg-[#2cbb00]/75 hover:shadow-[#2cbb00]",
     },
-  ],
+  ], */
   projectCardEnd: {
     title: "在 GitHub 查看更多开源创作",
-    desc: "@idealclover",
-    url: "https://github.com/idealclover",
-    btnText: "2.8K+ Stars ✨",
+    desc: "@ClovertaTheTrilobita",
+    url: "https://github.com/ClovertaTheTrilobita/",
+    btnText: "43 Stars ✨",
     bgStyle:
       "bg-[url('https://cdn.idealclover.cn/Projects/homepage/project_github.jpg')] bg-cover bg-center shadow-[#6e5494]/75 hover:shadow-[#6e5494]",
     textStyle: "text-white",

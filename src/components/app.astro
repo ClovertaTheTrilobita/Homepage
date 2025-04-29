@@ -108,23 +108,38 @@ import info from "../data/info";
         </div>
 
         <!-- 个人项目 -->
-        <!-- <div class="col-span-4">
-          <Card_8x1 info={info.sectionTitles[1]} />
+
+        <div class="col-span-4">
+          <div class="animate-on-scroll animate-entrance delay-300">
+            <Card_8x1 info={info.sectionTitles[1]} />
+          </div>
         </div>
+
         <div class="col-span-4 md:col-span-2">
-          <Card_4x2 info={info.projectCardStart} />
+          <div class="animate-on-scroll animate-entrance delay-400">
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-1"
+            >
+              <Card_4x2 info={info.projectCardStart} />
+            </div>
+          </div>
         </div>
-        {
+        <!-- {
           info.projectCards.map((card) => (
             <div class="col-span-4 sm:col-span-2 md:col-span-1">
               <Card_2x2 info={card} />
             </div>
           ))
-        }
+        } -->
         <div class="col-span-4 md:col-span-2">
-          <Card_4x2 info={info.projectCardEnd} />
-        </div> -->
-
+          <div class="animate-on-scroll animate-entrance delay-400">
+            <div
+              class="transition-transform duration-300 ease-bounce hover:-translate-y-1"
+            >
+              <Card_4x2 info={info.projectCardEnd} />
+            </div>
+          </div>
+        </div>
         <!-- 音乐创作 -->
         <!-- <div class="col-span-4">
           <Card_8x1 info={info.sectionTitles[2]} />
@@ -140,11 +155,7 @@ import info from "../data/info";
         <!-- 关注翠翠 -->
         <div class="md:hidden col-span-4">
           <div class="animate-on-scroll animate-entrance delay-450">
-            <div
-              class="transition-transform duration-300 ease-bounce hover:-translate-y-2"
-            >
-              <Card_8x1 info={info.sectionTitles[3]} />
-            </div>
+            <Card_8x1 info={info.sectionTitles[3]} />
           </div>
         </div>
         {
