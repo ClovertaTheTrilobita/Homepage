@@ -1,7 +1,7 @@
 export default {
   title: "ClovertaTheTrilobita",
   desc: "a.k.a. 寒武纪的三叶虫",
-  imgUrl: "http://blog.cloverta.top/wp-content/uploads/2025/04/512x512-1.jpg",
+  imgUrl: "https://s2.loli.net/2025/09/29/FmpnVIOjdh5ZENT.png",
   location: "Haikou, China",
   titleCard: {
     title: "ClovertaTheTrilobita",
