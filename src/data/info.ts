@@ -23,8 +23,8 @@ export default {
   blogCard: {
     title: "博客",
     desc: "我曾经想过写博客",
-    subdesc: "blog.csdn.net/Clovertaa",
-    url: "https://blog.csdn.net/Clovertaa",
+    subdesc: "blog.cloverta.top",
+    url: "https://blog.cloverta.top",
     btnText: "去逛逛 · 历史文章",
     bgStyle:
       "bg-[#2C3E50] shadow-[#2C3E50]/75 hover:bg-[#2C3E50]/75 hover:shadow-[#2C3E50]",
@@ -275,8 +275,8 @@ export default {
   ],
   teleCards: [
     {
-      title: "Email: cloverta@petalmail.com",
-      url: "mailto:cloverta@petalmail.com",
+      title: "Email: contact@cloverta.top",
+      url: "mailto:contact@cloverta.top",
       iconClass: "mail_s",
       iconInfoClass: "mail",
       textStyle: "font-normal",
