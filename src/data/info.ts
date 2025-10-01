@@ -116,7 +116,7 @@ export default {
     url: "https://github.com/ClovertaTheTrilobita/SanYeCao-Nonebot",
     btnText: "github.com",
     bgStyle:
-      "bg-[url('https://blog.cloverta.top/wp-content/uploads/2025/04/122857380_p0.png')] bg-cover bg-center shadow-[#2C3E50]/75 hover:shadow-[#2C3E50]",
+      "bg-[url('https://s2.loli.net/2025/10/01/8d1XqAcBsUCQWOk.png')] bg-cover bg-center shadow-[#2C3E50]/75 hover:shadow-[#2C3E50]",
     textStyle: "text-black",
     btnStyle: "glass",
     btnTextStyle: "text-black lowercase",
