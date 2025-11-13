@@ -13,7 +13,7 @@ export default defineConfig({
   // site: 'http://localhost:4321',
 
   // production mode
-  site: 'https://cloverta.top/',
+  site: 'https://www.cloverta.top/',
 
   // mode: 不同的网站 cn/top/moe
   siteMode: "top"
