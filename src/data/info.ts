@@ -2,15 +2,15 @@ export default {
   title: "ClovertaTheTrilobita",
   desc: "a.k.a. 寒武纪的三叶虫",
   imgUrl: "https://s2.loli.net/2025/09/29/FmpnVIOjdh5ZENT.png",
-  location: "Oulu, Finland",
+  location: "Haikou, China",
   titleCard: {
     title: "ClovertaTheTrilobita",
-    desc: "Undergraduate | Software Engineering",
+    desc: "带学牲 | 计算机本科在读 | 死宅",
     subdesc: "I use Arch btw.",
     url: "https://github.com/CLovertaTheTrilobita",
     bgStyle:
       "bg-primary shadow-accent hover:bg-primary-focus hover:shadow-gray-500",
-    btnText: "About · My Github",
+    btnText: "关于我 · 了解更多",
   },
   cvTitleCard: {
     title: "寒武纪的三叶虫 @clovertathetrilobita",
@@ -21,11 +21,11 @@ export default {
     btnText: "查看简历",
   },
   blogCard: {
-    title: "BLOGS",
-    desc: "I thought about writing them",
+    title: "博客",
+    desc: "我曾经想过写博客",
     subdesc: "blog.cloverta.top",
     url: "https://blog.cloverta.top",
-    btnText: "Seek · My Blogs",
+    btnText: "去逛逛 · 历史文章",
     bgStyle:
       "bg-[#2C3E50] shadow-[#2C3E50]/75 hover:bg-[#2C3E50]/75 hover:shadow-[#2C3E50]",
     textStyle: "text-white",
@@ -60,7 +60,7 @@ export default {
       url: "https://doc.cloverta.top/",
       bgStyle:
         "bg-[#0275D2] shadow-[#0275D2]/75 hover:bg-[#0275D2]/75 hover:shadow-[#0275D2]",
-      btnText: "Still Updating🔥",
+      btnText: "绝赞更新中🔥",
       textStyle: "text-white",
       btnStyle: "zhihu text-white",
     },
@@ -83,9 +83,9 @@ export default {
       textStyle: "text-white",
     },
     {
-      title: "NetEase",
+      title: "网易云",
       url: "https://music.163.com/#/user/home?id=1497040752",
-      btnText: "Let's Rock🎶",
+      btnText: "来听会儿歌吧🎶",
       bgStyle:
         "bg-[#C20B0D] shadow-[#C20B0D]/75 hover:bg-[#C20B0D]/75 hover:shadow-[#C20B0D]",
       btnStyle: "netease text-white",
@@ -94,25 +94,25 @@ export default {
   ],
   sectionTitles: [
     {
-      title: "📝 Contents Displaying",
+      title: "📝 内容列表",
     },
     {
-      title: "🗃️ Personal Projects",
+      title: "🗃️ 个人项目",
     },
     {
       title: "🎼 音乐创作",
     },
     {
-      title: "👋 Related to Me",
+      title: "👋 与我相关",
     },
     {
-      title: "📫 Contact Information",
+      title: "📫 与我联系",
     },
   ],
   projectCardStart: {
-    title: "SanYeCao-bot",
+    title: "三叶草bot",
     desc: "一个基于Nonebot+官方API的QQ群聊机器人",
-    subdesc: "Let's build a chatbot",
+    subdesc: "来做个QQ机器人吧",
     url: "https://github.com/ClovertaTheTrilobita/SanYeCao-Nonebot",
     btnText: "github.com",
     bgStyle:
@@ -217,7 +217,7 @@ export default {
     },
   ], */
   projectCardEnd: {
-    title: "View on GitHub for More",
+    title: "在 GitHub 查看更多开源创作",
     desc: "@ClovertaTheTrilobita",
     url: "https://github.com/ClovertaTheTrilobita/",
     btnText: "43 Stars ✨",
